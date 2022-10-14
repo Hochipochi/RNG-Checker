@@ -17,6 +17,7 @@ h1 {
     font-size: 400%;
     margin: auto;
     padding: 20px;
+    text-align: center;
 }
 
 /* Modifies second header */
@@ -28,8 +29,14 @@ h2 {
 
 }
 
+/* Modifies the initial container */
+
+.flex-container {
+    display: inline-block;
+}
+
 /*Modifies the div boxes for the roll options */
-div {
+.container-child {
     display: inline-block;
     width: 300px;
     border: 2px solid whitesmoke;
@@ -40,3 +47,15 @@ div {
     color: whitesmoke;
 }
 
+.buttonHistory {
+    color: black;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font: bold;
+    cursor: pointer;
+    margin-left: 20px;
+}
