@@ -59,3 +59,77 @@ h2 {
     cursor: pointer;
     margin-left: 20px;
 }
+
+.buttonDice:hover {
+    background-color: silver;
+    cursor: pointer;
+}
+
+.imgCoin {
+    display: flex;
+    max-height: 50%;
+    max-width: 50%;
+    margin-left: 73px;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.imgDSix {
+    display: flex;
+    max-height: 40%;
+    max-width: 40%;
+    margin-left: 90px;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.imgDTen {
+    display: flex;
+    max-height: 45%;
+    max-width: 45%;
+    margin-left: 85px;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.imgDTwelve {
+    display: flex;
+    max-height: 45%;
+    max-width: 45%;
+    margin-left: 85px;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.imgDTwenty {
+    display: flex;
+    max-height: 45%;
+    max-width: 45%;
+    margin-left: 87px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.imgDHundred {
+    display: flex;
+    max-height: 50%;
+    max-width: 50%;
+    margin-left: 73px;
+    padding: 0px;
+}
+
+.imgDicebag {
+    display: flex;
+    max-height: 50%;
+    max-width: 50%;
+    margin-left: 73px;
+    padding: 0px;
+}
+
+.imgQmark {
+    display: flex;
+    max-height: 50%;
+    max-width: 50%;
+    margin-left: 73px;
+    padding: 0px;
+}
