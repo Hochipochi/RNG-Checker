@@ -1,13 +1,42 @@
-/* Body style */
-body {
-    background-color: orangered;
+/* Global modifier for font-family */
+* {
+    font-family: "Fantasy", sans-serif, Times;
 }
 
+
+/* Body style */
+body {
+    background-color: #3c3c3c;
+}
+
+/* Modifies banner + main header */
 h1 {
-    color: black;
-    background-color: gray;
-    height: 100px;
+    color: whitesmoke;
+    background-color: orangered;
+    height: 80px;
     font-size: 400%;
     margin: auto;
     padding: 20px;
 }
+
+/* Modifies second header */
+h2 {
+    color: whitesmoke;
+    margin-left: 200px;
+    font: bold;
+    font-size: 180%;
+
+}
+
+/*Modifies the div boxes for the roll options */
+div {
+    display: inline-block;
+    width: 300px;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    height: 300px;
+    margin: 20px;  
+    font-size: 200%;
+    color: whitesmoke;
+}
+
