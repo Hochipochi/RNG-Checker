@@ -17,7 +17,9 @@ h1 {
     font-size: 400%;
     margin: auto;
     padding: 20px;
-    text-align: center;
+    text-align: justify;
+    border: 1px solid;
+    text-justify: auto;
 }
 
 /* Modifies second header */
@@ -26,6 +28,7 @@ h2 {
     margin-left: 200px;
     font: bold;
     font-size: 180%;
+    border: 5px;
 
 }
 

@@ -3,3 +3,6 @@
 //number generator for each style of rng. also needs a button
 //to clear local storage for that specific style of rng.
 
+document.getElementById("qMark").onclick = function() {
+   
+}
