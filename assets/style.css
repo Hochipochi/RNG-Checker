@@ -60,8 +60,7 @@ h2 {
     margin-left: 20px;
 }
 
-.buttonDice:hover {
-    background-color: silver;
+img:hover {
     cursor: pointer;
 }
 
