@@ -13,7 +13,7 @@ body {
 h1 {
     color: whitesmoke;
     background-color: orangered;
-    height: 80px;
+    /* height: 80px; */
     font-size: 400%;
     margin: auto;
     padding: 20px;

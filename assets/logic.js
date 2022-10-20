@@ -1,8 +1,28 @@
-//This file will contain the logic for each button for the 
-//button.js file to reference. it needs to contain the random
-//number generator for each style of rng. also needs a button
-//to clear local storage for that specific style of rng.
+//Logic for dicebag
 
-document.getElementById("qMark").onclick = function() {
-   
+document.getElementById("diceBag").onclick = function() {
+   var input = prompt("How many sides do you want your dice to have?")
+   var regex = /^[0-9]+$/;
+   var displayAnswer = [];
+   if (input.match(regex)) {
+    var inputStr = parseInt(input)
+    var inputSecond = prompt("How many of this dice would you like to roll?")
+        if (inputSecond.match(regex)) {
+            var inputSecondStr = parseInt(inputSecond)
+            for (i = 0; i < inputSecondStr; i++) {
+                var answer = Math.ceil(Math.random() * inputStr)
+                displayAnswer.push(answer)
+        }
+   }
+   } else {
+    window.alert("You must input a number")
+    return;
+   }
+   window.alert("Your rolls are: " + displayAnswer + " !")
+   bag.push(displayAnswer)
+}
+
+//function to call and overwrite localstorage
+function writeStorage () {
+    
 }
