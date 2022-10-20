@@ -2,7 +2,7 @@
 
 document.getElementById("diceBag").onclick = function() {
    var input = prompt("How many sides do you want your dice to have?")
-   var regex = /^[0-9]+$/;
+   var regex = /[0-9]/;
    var displayAnswer = [];
    if (input.match(regex)) {
     var inputStr = parseInt(input)
@@ -20,9 +20,15 @@ document.getElementById("diceBag").onclick = function() {
    }
    window.alert("Your rolls are: " + displayAnswer + " !")
    bag.push(displayAnswer)
+   addToLocalStorage("diceBag", bag)
 }
 
 //function to call and overwrite localstorage
-function writeStorage () {
-    
+function addToLocalStorage(key, value) {
+    localStorage.setItem(key, JSON.stringify(value));
+}
+
+//function to retrieve value of localstorage
+function getFromLocalStorage(key) {
+    return JSON.parse(localStorage.getItem(key))
 }
