@@ -19,8 +19,6 @@ document.getElementById("diceBag").onclick = function() {
     return;
    }
    window.alert("Your rolls are: " + displayAnswer + " !")
-   bag.push(displayAnswer)
-   addToLocalStorage("diceBag", bag)
 }
 
 //function to call and overwrite localstorage

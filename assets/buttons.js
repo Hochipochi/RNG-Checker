@@ -7,20 +7,22 @@ var twelve = [];
 var twenty = [];
 var hundred = [];
 var custom = [];
-var bag = [];
 
 //logic for dice + custom roll 
 
 document.getElementById("coin").onclick = function() {
     var number = Math.random();
     if (number < 0.5) {
+        var heads = "heads";
+        flip.push(heads)
         window.alert("Your Coin landed on Heads!")
+        addToLocalStorage("flip", flip)
     } else {
+        var tails = "tails";
+        flip.push(tails)
         window.alert("Your Coin landed on Tails!")
-    } flip.push(number)
-    addToLocalStorage("flip", flip)
-
-
+        addToLocalStorage("flip", flip)
+    } 
 }
 
 document.getElementById("dSix").onclick = function() {
@@ -81,8 +83,23 @@ document.getElementById("qMark").onclick = function() {
 
 //onclick function for button history to show the alert
 document.getElementById("buttonHistory").onclick = function() {
-    six = getFromLocalStorage("dSix")
+    var flip = getFromLocalStorage("flip") ? getFromLocalStorage("flip") : []
+    var six = getFromLocalStorage("dSix") ? getFromLocalStorage("dSix") : []
+    var eight = getFromLocalStorage("dEight") ? getFromLocalStorage("dEight") : []
+    var ten = getFromLocalStorage("dTen") ? getFromLocalStorage("dTen") : []
+    var twelve = getFromLocalStorage("dTwelve") ? getFromLocalStorage("dTwelve") : []
+    var twenty = getFromLocalStorage("dTwenty") ? getFromLocalStorage("dTwenty") : []
+    var hundred = getFromLocalStorage("dHundred") ? getFromLocalStorage("dHundred") : []
+    var custom = getFromLocalStorage("qMark") ? getFromLocalStorage("qMark") : []
+
+    window.alert("These are your rolls for: " + flip + " !\n" + "These are your rolls for: " + six + " !\n" + "These are your rolls for: " + eight + " !\n"
+     + "These are your rolls for: " + ten + " !\n" + "These are your rolls for: " + twelve + " !\n" + "These are your rolls for: " + twenty + " !\n" +
+     "These are your rolls for: " + hundred + " !\n" + "These are your rolls for: " + custom + " !")
 }
 
 
 //onclick function to clear localstorage
+document.getElementById("buttonClear").onclick = function() {
+    localStorage.clear();
+    window.location.reload();
+}
