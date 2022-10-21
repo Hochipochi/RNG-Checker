@@ -92,9 +92,9 @@ document.getElementById("buttonHistory").onclick = function() {
     var hundred = getFromLocalStorage("dHundred") ? getFromLocalStorage("dHundred") : []
     var custom = getFromLocalStorage("qMark") ? getFromLocalStorage("qMark") : []
 
-    window.alert("These are your rolls for: " + flip + " !\n" + "These are your rolls for: " + six + " !\n" + "These are your rolls for: " + eight + " !\n"
-     + "These are your rolls for: " + ten + " !\n" + "These are your rolls for: " + twelve + " !\n" + "These are your rolls for: " + twenty + " !\n" +
-     "These are your rolls for: " + hundred + " !\n" + "These are your rolls for: " + custom + " !")
+    window.alert("These are your rolls for Coin Toss: " + flip + " !\n" + "These are your rolls for the D6: " + six + " !\n" + "These are your rolls for the D8: " + eight + " !\n"
+     + "These are your rolls for the D10: " + ten + " !\n" + "These are your rolls for the D12: " + twelve + " !\n" + "These are your rolls for the D20: " + twenty + " !\n" +
+     "These are your rolls for the D100: " + hundred + " !\n" + "These are your rolls for your custom dice: " + custom + " !")
 }
 
 
